@@ -20,9 +20,12 @@ public class WebseriesController {
     public int addWebSeries(WebSeriesEntryDto webSeriesEntryDto){
 
         try{
+            System.out.println(webSeriesEntryDto.getRating());
             return webSeriesService.addWebSeries(webSeriesEntryDto);
 
         }catch (Exception e){
+//            System.out.println(webSeriesEntryDto.getProductionHouseId());
+//            System.out.println(webSeriesEntryDto.getSeriesName());
             return -1;
         }
     }

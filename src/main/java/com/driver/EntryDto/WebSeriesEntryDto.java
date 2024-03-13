@@ -27,7 +27,7 @@ public class WebSeriesEntryDto {
         this.subscriptionType = subscriptionType;
         this.productionHouseId = productionHouseId;
     }
-
+    public WebSeriesEntryDto(){}
     public String getSeriesName() {
         return seriesName;
     }
